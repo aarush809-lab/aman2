@@ -170,3 +170,19 @@ function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('show');
 }
+
+$("#mobile_code").intlTelInput({
+	initialCountry: "in",
+	separateDialCode: true,
+	utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+});
+
+var darkmode = document.getElementById("darkmode");
+
+darkmode.onclick = function(){
+  document.body.classList.toggle("dark-mode");
+  if(document.body.classList.contains("dark-mode")){
+    darkmode = "images/icon/sun.png";
+  }
+
+}
