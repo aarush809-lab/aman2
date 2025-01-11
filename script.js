@@ -170,20 +170,3 @@ function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('show');
 }
-
-// $("#mobile_code").intlTelInput({
-// 	initialCountry: "in",
-// 	separateDialCode: true,
-// 	utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-// });
-
-function showSidebar(){
-  const sidebar = document.querySelector('.side-bar')
-  sidebar.style.display = 'flex'
-}
-
-function HideSidebar() {
-  const sidebar = document.querySelector('.side-bar')
-  sidebar.style.display = 'none'
-}
-
