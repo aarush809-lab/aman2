@@ -4,11 +4,10 @@
 	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
-	<title>LearnEd</title>
+	<title>AssignmentKaro</title>
 	<meta name="desciption" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script>
 		$(window).on('scroll', function(){
@@ -35,7 +34,7 @@
 <!-- Navigation Bar -->
 	<header id="header">
 		<nav>
-			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<h2>AssignmentKaro</h2>
 			<ul>
 				<li><a class="active" href="">Home</a></li>
 				<li><a href="#portfolio_section">Portfolio</a></li>
@@ -49,7 +48,7 @@
 		</nav>
 		<div class="head-container">
 			<div class="quote">
-				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<p>Academic Success, Your Key to Visa Success!</p>
 				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
 				<div class="play">
 					<img src="images/icon/play.png" alt="play"><span><a href="https://www.youtube.com/watch?v=jfyVcNLPruI" target="_blank">Watch Now</a></span>
@@ -59,14 +58,16 @@
 				<img src="images/extra/svg1.jpg" alt="svg">
 			</div>
 		</div>
-		<div class="side-menu" id="side-menu">
-			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
-			<div class="user">
-				<img src="images/creator/SIM.jpg" alt="Username">
-				<p>Sachin Gupta</p>
-			</div>
+		<div class = "mobile-menu">
+			<h2>AssignmentKaro</h2>
+			<img id="open-button" onclick = showSidebar() src="images/icon/menu.png" alt="menu">
+		</div>
+
+		<div class="side-bar" id="side-bar">
+			<div><img id="close-button" onclick=HideSidebar() src="images/icon/close.png" alt="close"></div>
 			<ul>
-				<li><a href="#about_section">About</a></li>
+				
+				<li><a class="active" href="#about_section">About</a></li>
 				<li><a href="#portfolio_section">Portfolio</a></li>
 				<li><a href="#team_section">Team</a></li>
 				<li><a href="#services_section">Services</a></li>
@@ -80,7 +81,7 @@
 
 <!-- Some Popular Subjects -->
 	<div class="title">
-		<span>Popular Subjects on GradeGuru</span>
+		<span>Popular Subjects on AssignmentKaro</span>
 	</div>
 	<br><br>
 	<div class="course">
@@ -108,7 +109,7 @@
 				</div>
 				<div class="side-text">
 					<h2>What you think about us ?</h2>
-					<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+					<p>We provide top-notch education and assignment help to students, empowering them to achieve academic success. <br> Our expert team offers personalized guidance in various subjects, ensuring quality solutions tailored to individual needs. Whether you need assistance with research, essay writing, problem-solving, or project development, we are here to simplify your learning journey. Our services are reliable, affordable, and delivered on time, enabling students to focus on their studies stress-free. With a commitment to excellence, we foster growth and knowledge, helping students overcome academic challenges and excel in their educational pursuits. Partner with us for trusted, comprehensive academic support.</p>
 				</div>
 		</div>
 	</div>
@@ -139,19 +140,19 @@
 		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
 		<div class="totalcard">
 			<div class="card">
-				<center><img src="images/creator/SIM.jpg"></center>
-				<center><div class="card-title">Sachin Gupta MIT</div>
+				<center><img src="images/creator/teacher2.jpeg"></center>
+				<center><div class="card-title">James Parker <br> <h5>Economics Eexpert</h5></div>
 				<div id="detail">
-					<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima deleniti incidunt natus cum, nam neque veritatis odio quis iste.“</p>
+					<h4>I am an economics teacher passionate about making complex concepts accessible and engaging. Through interactive lessons and real-world examples. I create a supportive environment where students feel encouraged to explore economic ideas, ensuring they build a strong foundation</h4>
 					<div class="duty"></div>
 				</div>
 				</center>
 			</div>
 			<div class="card">
-				<center><img src="images/creator/SIM2.jpg"></center>
-				<center><div class="card-title">Aman Kumar Hardward</div>
+				<center><img src="images/creator/WhatsApp Image 2025-01-02 at 14.24.01.jpeg"></center>
+				<center><div class="card-title">Anny Johnson <br> <h5>Software Engineer</h5> </div>
 				<div id="detail">
-					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit unde eligendi voluptates quis quae temporibus quia explicabo aperiam molestiae.“</p>
+					<h4>I am a computer science teacher, and I’m thrilled that many of my students earned an A+ grade. It’s incredibly fulfilling to see their hard work and dedication pay off. I strive to create an engaging learning environment where students can develop their coding skills and problem-solving abilities</h4>
 					<div class="duty"></div>
 				</div>
 				</center>
@@ -186,53 +187,49 @@
 	<div class="rev-container">
 		<div class="rev-card">
 			<div class="identity">
-				<img src="images/creator/humanNotExist1.jpg"><p>Sophie Daniel</p>
-				<h6>Java</h6>
+				<img src="images/creator/WhatsApp Image 2025-01-03 at 13.30.08.jpeg"><p>Sophie Daniel</p>
+				<h6>Economics</h6>
 				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
 			</div>
 			<div class="rev-cont">
-				<p id="title">Review:</p>
 				<p id="content">
-					I did Java Fundamenetal course with Rishab Sir. It was a great experience. The brain teasers and assignments, actually the whole lot of content was really good. Some problems were challenging yet interesting. Was explained very well where ever I stuck...
+					Ms. Parker is an incredible teacher at AssignmentKaro. His engaging teaching style and insightful feedback helped me grasp difficult concepts and improve my exam performance. She is always supportive and approachable. I am grateful for her guidance and highly recommend her to any student seeking academic excellence
 				</p>
 			</div>
 		</div>
 		<div class="rev-card">
 			<div class="identity">
-				<img src="images/creator/humanNotExist2.jpg"><p>Clayton Clair</p>
-				<h6>C/C++</h6>
+				<img src="images/creator/S1.jpeg"><p>Clayton Clair</p>
+				<h6>Maths</h6>
 				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
 			</div>
 			<div class="rev-cont">
-				<p id="title">Review:</p>
 				<p id="content">
-					When I was watching "Dear Zindagi", I could relate Sharukh Khan to Arnav Bhaiya. The way Sharukh Khan was giving life lessons to Alia Bhatt, in the same way Arnav Bhaiya will give coding life lessons which will guide you throughout your code life...
+					AssignmentKaro has been a beacon of support throughout my academic journey. Their tailored assistance and in-depth knowledge have not only boosted my grades but also enhanced my understanding of subjects. They truly care about student success, making them an indispensable resource for anyone aiming high.
 				</p>
 			</div>
 		</div>
 		<div class="rev-card">
 			<div class="identity">
-				<img src="images/creator/humanNotExist3.jpg"><p>Devyn Sethi</p>
-				<h6>JEE</h6>
+				<img src="images/creator/S3.jpeg"><p>Devyn Sethi</p>
+				<h6>Accounts</h6>
 				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
 			</div>
 			<div class="rev-cont">
-				<p id="title">Review:</p>
 				<p id="content">
-					LearnEd was an amazing experience for me. I belong to electronics department and had a little experience in coding but I think it has helped me think things through in a much more analytical manner. Coding is important no matter which branch you are in. It gives you a better understanding about how to approach a problem...
+					Thanks to AssignmentKaro, I managed to score top grades in my exams. Their well-structured materials and expert advice were a game-changer for me. The team is incredibly supportive and always available to answer my questions. Truly the best academic partner for students!
 				</p>
 			</div>
 		</div>
 		<div class="rev-card">
 			<div class="identity">
-				<img src="images/creator/humanNotExist4.jpg"><p>Rylee Phillips</p>
-				<h6>Python</h6>
+				<img src="images/creator/S4.jpeg"><p>Rylee Phillips</p>
+				<h6>Computer Science</h6>
 				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
 			</div>
 			<div class="rev-cont">
-				<p id="title">Review:</p>
 				<p id="content">
-					This was my first complete course at coding blocks. I attended the Python course in Winter 2020 and loved it which made me join the full course. Shubham bhaiya and Ayush Bhaiya(TA) have good knowledge about the field and were very helpful in making us understand the concepts. I would certainly recommend this to anyone...
+					Mr. Johnson from AssignmentKaro is an outstanding teacher. His clear explanations and patient guidance helped me understand complex topics easily. His personalized approach to teaching boosted my confidence and improved my grades. I highly recommend him for anyone looking for dedicated and professional academic support.
 				</p>
 			</div>
 		</div>
@@ -240,32 +237,82 @@
 </div>
 
 <!-- CONTACT US -->
-	<div class="diffSection" id="contactus_section">
-		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
-		<div class="csec"></div>
-		<div class="back-contact">
-			<div class="cc">
-				<form
-				action="https://formspree.io/f/xyzzdgjr"
-				method="POST"
-			  >
+<div class="diffSection" id="contactus_section">
+	<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+	<div class="csec"></div>
+	<div class="back-contact">
+		<div class="cc">
+			<form
+			action="https://formspree.io/f/xyzzdgjr"
+			method="POST"
+			>
+			 <div class="main-view">
 				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
-				<center>
-				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
-				</center>
-				<label>Email <span class="imp">*</span></label><br>
-				<input type="email" name="mail" style="width: 100%" required="required"><br>
-				<label>Message <span class="imp">*</span></label><br>
-				<input type="text" name="message" style="width: 100%" required="required"><br>
-				<label for="myfile">Select a file:</label><br>
-                <input type="file" id="myfile" name="myfile" style="width: 100%"><br>
-				<label>Additional Details</label><br>
-				<textarea name="addtional"></textarea><br>
-				<button type="submit" id="csubmit">Send Message</button>
-			</form>
-			</div>
+		  <center>
+			<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+			</center>
+			 </div>
+
+			 <span class="mobile-view">
+				<label>First Name <span class="imp">*</span></label><br>
+				<input type="text" name="fname"  style="width: 100%"  required="required" ><br>
+				<label >Last Name <span class="imp">*</span></label><br>
+		  
+			<input type="text" name="lname" style="width: 100%"  required="required"><br>
+			 </span>
+				
+			
+
+			 
+			<label>Email <span class="imp">*</span></label><br>
+			<input type="email" name="mail" style="width: 100%" required="required"><br>
+			<label for="phone">Enter a phone number <span class="imp">*</span></label><br>
+      <div class="phone-input-container">
+     <div class="country-dropdown">
+	   <select id="country" name="country" required="required">
+		 <option value="+1" data-flag="🇺🇸">
+		 USA (+1)
+		</option>
+		<option value="+91" data-flag="🇮🇳" selected>India (+91)</option>
+		<option value="+44" data-flag="🇬🇧" >UK (+44)</option>
+		<option value="+61" data-flag="🇦🇺">Australia (+61)</option>
+		<option value="+81" data-flag="🇯🇵">Japan (+81)</option>
+		<option value="+33" data-flag="🇫🇷">France (+33)</option>
+		<option value="+49" data-flag="🇩🇪">Germany (+49)</option>
+		<option value="+55" data-flag="🇧🇷">Brazil (+55)</option>
+		<option value="+86" data-flag="🇨🇳">China (+86)</option>
+		<option value="+7" data-flag="🇷🇺">Russia (+7)</option>
+		<option value="+34" data-flag="🇪🇸">Spain (+34)</option>
+		<option value="+27" data-flag="🇿🇦">South Africa (+27)</option>
+		<option value="+20" data-flag="🇪🇬">Egypt (+20)</option>
+		<option value="+31" data-flag="🇳🇱">Netherlands (+31)</option>
+		<option value="+39" data-flag="🇮🇹">Italy (+39)</option>
+		<option value="+41" data-flag="🇨🇭">Switzerland (+41)</option>
+		<option value="+52" data-flag="🇲🇽">Mexico (+52)</option>
+		<option value="+46" data-flag="🇸🇪">Sweden (+46)</option>
+		<option value="+32" data-flag="🇧🇪">Belgium (+32)</option>
+		<option value="+1" data-flag="🇨🇦">Canada (+1)</option>
+		<option value="+234" data-flag="🇳🇬">Nigeria (+234)</option>
+		<option value="+62" data-flag="🇮🇩">Indonesia (+62)</option>
+		<option value="+90" data-flag="🇹🇷">Turkey (+90)</option>
+		<option value="+380" data-flag="🇺🇦">Ukraine (+380)</option>
+	</select>
+</div>
+
+<input type="tel" id="phone" name="phone" required="required" placeholder="Phone Number" style="width: 100%;"><br>
+</div>
+
+			
+
+			<label>Message <span class="imp">*</span></label><br>
+			<input type="text" name="message" style="width: 100%" required="required"><br>
+			<label for="myfile">Select a file: <span class="imp">*</span></label><br>
+			<input type="file" id="myfile" name="myfile" style="width: 100%" required="required"><br>
+			<button type="submit" id="csubmit">Send Message</button>
+		</form>
 		</div>
 	</div>
+</div>
 
 
 <!-- FEEDBACK -->
@@ -301,7 +348,7 @@
 	<footer>
 		<div class="footer-container">
 			<div class="left-col">
-				<img src="images/icon/logo - Copy.png" style="width: 200px;">
+				<h1>AssignmentKaro</h1>
 				<div class="logo"></div>
 				<div class="social-media">
 					<a href="#"><img src="images/icon\fb.png"></a>
@@ -310,9 +357,9 @@
 					<a href="#"><img src="images/icon\ytube.png"></a>
 					<a href="#"><img src="images/icon\linkedin.png"></a>
 				</div><br><br>
-				<p class="rights-text">Copyright © 2024 Created By 	Sachin, All Rights Reserved.</p>
-				<br><p><img src="images/icon/location.png"> 142 Kharar,Chandigarh </p><br>
-				<p><img src="images/icon/phone.png"> +91-9305-680-208<br><img src="images/icon/mail.png">&nbsp; GradeGuruHelp@gmail.com</p>
+				<p class="rights-text">Copyright © 2024 Created By 	AssignmentKaro.co, All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Valby,Copenhagen </p><br>
+				<p><img src="images/icon/phone.png"> +45-20693736<br><img src="images/icon/mail.png">&nbsp;AssignmentBuddyHelp1@gmail.com</p>
 			</div>
 			<div class="right-col">
 				<h1 style="color: #fff">Our Newsletter</h1>
@@ -330,6 +377,6 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="script.js"></script>
 </body>
 </html>
